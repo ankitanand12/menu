@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Web Menu Automation</title>
+</head>
+<style>
+body {
+  background-image: url('apache.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+h1 {text-align: center;color:darkblack;}
+h2 {text-align: left;color:grey;}
+div {text-align: center;}
+
+.button {
+  border: 1px;
+  color: white;
+  padding: 10px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 8px 4px;
+  margin-right: 8px 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  #float: left;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
+
+<body>
+
+<h1>Welcome to ARTH Webserver Setup</h1>
+<h2>Create a demo web page</h2>
+<h4>Yum Must Be Configured Before Working on Webserver</h4>
+
+<form  method='GET' action='/cgi-bin/webserver.py'>
+  Enter Your Page Name: <input name="pname"><br><br>
+  Enter Your Demo Data: <br><textarea name="rawdata" rows="4" cols="30">
+  </textarea>
+  <p>Don't use .html after File name</p>
+  <button class="button button1" type="submit">Submit</button>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
