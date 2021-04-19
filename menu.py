@@ -41,7 +41,7 @@ echo '<?xml version=\"1.0\"?>
 <value>/{folder_name}</value>
 </property>
 </configuration>' > /etc/hadoop/hdfs-site.xml""")
-        os.system("hadoop namenode -format")
+        os.system("echo Y | hadoop namenode -format")
         os.system("hadoop-daemon.sh start namenode")
 
 
