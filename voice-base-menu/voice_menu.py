@@ -4,6 +4,7 @@ from os import system
 from subprocess import getoutput 
 
 # You may get error if you use pyttsx3 for first use this link and download rpm file and choose (CentOs) url is : https://rpmfind.net/linux/rpm2html/search.php?query=libespeak.so.1()(64bit) 
+# This software give libspeak library
 # Then install yum install file_name(which you just downloaded using above url)
 # Now install pyttsx3 : (pip3 install pyttsx3) 
 
